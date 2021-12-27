@@ -6,12 +6,12 @@ int main()
 {
  printf("\033[H\033[2J");
  printf("\n");
- printf("💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️💻️\n\n");
- printf("🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️  LANGAGE DE PROGRAMMATION EN C  🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️🌍️\n\n");
+ printf("###############################################################################\n\n");
+ printf("#######################  LANGAGE DE PROGRAMMATION EN C  #######################\n\n");
 printf("-------------------------------------------------------------------------------------------\n");
- printf("-----------------------------Bonjour Monsieur/Madame 👋️👋️👋️--------------------------------\n\n");
- printf("------------------------😊️😉️ OPERATION MATHEMATIQUE AUX CHOIX 😉️😊️-------------------------\n\n");
- printf("-------------------------vous n'aurez qu'à suivre simplement les instrucions 😉️------------\n\n");
+ printf("----------------------------- Bonjour Monsieur/Madame --------------------------------\n\n");
+ printf("------------------------ OPERATION MATHEMATIQUE AUX CHOIX -------------------------\n\n");
+ printf("------------------------- vous n'aurez qu'à suivre simplement les instrucions ------------\n\n");
  int choix;
  char valeur[100];
  debut: printf("\n");
@@ -53,7 +53,7 @@ couleur("0");
          if(Nombre>1)
          {
            couleur("7;32");
-           printf("\n*********Voici votre décomposition 👍️👍️***********\n\n");
+           printf("\n*********Voici votre décomposition  ***********\n\n");
            couleur("0");
            couleur("1;33");
            printf("%ld=",Nombre);
@@ -96,7 +96,7 @@ couleur("0");
            {
               printf("\033[H\033[2J");
               couleur("1;31");
-              printf("Choix invalide ⚠️ ⚠️ ⚠️ \n");
+              printf("Choix invalide \n");
               couleur("0");
               printf("Veillez choisir à nouveau");
               goto demande1;
@@ -106,7 +106,7 @@ couleur("0");
          {
             printf("\033[H\033[2J");
             couleur("1;5;31");
-            printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+            printf("Erreur de saisi\n");
             couleur("0");
             printf("Saissisez maintenant un entier svp\n\n");
             goto demande1;
@@ -122,7 +122,7 @@ couleur("0");
        { 
            printf("\033[H\033[2J");
            couleur("1;31");
-           printf("Choix invalide ⚠️ ⚠️ ⚠️\n");
+           printf("Choix invalide  \n");
            couleur("0");
            printf("Veillez choisir à nouveau\n");
            goto encore1; //on repart au debut du 1er cas (Facteur premiers)
@@ -132,7 +132,7 @@ couleur("0");
       {
         printf("\033[H\033[2J");
         couleur("1;5;31");
-        printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+        printf("Erreur de saisi \n");
         couleur("0");
         printf("Saissisez maintenant un entier svp\n\n");
         goto encore1;
@@ -166,7 +166,7 @@ couleur("0");
             unsigned long T[n+1][n+1];// tableau de dimension 2 
             printf("\n");
             couleur("7;32");
-            printf("Votre triangle de Pascal de (a+b)^%ld est:😊️😉️\n\n",n);
+            printf("Votre triangle de Pascal de (a+b)^%ld est: \n\n",n);
             couleur("0");
             couleur("1;33");
             T[0][0]=1; //la 1ere ligne et colonne sera initialiser à 1
@@ -206,7 +206,7 @@ couleur("0");
               {
                 printf("\033[H\033[2J");
                 couleur("1;31");
-                printf("Choix invalide ⚠️ ⚠️ ⚠️ \n");
+                printf("Choix invalide \n");
                 couleur("0");
                 printf("Veillez choisir à nouveau");
                 goto demande2;
@@ -216,7 +216,7 @@ couleur("0");
             {
                printf("\033[H\033[2J");
                couleur("1;5;31");
-               printf("Erreur de saisi ⛔️ ⛔️ ⛔️ \n");
+               printf("Erreur de saisi \n");
                couleur("0");
                printf("Saissisez maintenant un entier svp\n\n");
                goto demande2;
@@ -232,7 +232,7 @@ couleur("0");
           {
              printf("\033[H\033[2J");
              couleur("1;31");
-             printf("Choix invalide ⚠️ ⚠️ ⚠️\n");
+             printf("Choix invalide \n");
              couleur("0");
              printf("Veillez choisir à nouveau\n");
              goto encore2; //On repart au debut du cas 2 (Triangle de Pascal)
@@ -242,7 +242,7 @@ couleur("0");
         {
           printf("\033[H\033[2J");
           couleur("1;5;31");
-          printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+          printf("Erreur de saisi \n");
           couleur("0");
           printf("Saissisez maintenant un entier svp\n\n");
           goto encore2;
@@ -274,7 +274,7 @@ couleur("0");
                 bool Supprime[N];//On déclare un tableau de booléen
                 printf("\n");
                 couleur("7;32");
-                printf("********Les nombres premiers inferieurs ou égales à %ld sont 😊️🤩️:\n\n",N);
+                printf("********Les nombres premiers inferieurs ou égales à %ld sont :\n\n",N);
                 couleur("0");
                 couleur("1;33");
                 for(i=1; i<=N;i++)
@@ -307,7 +307,7 @@ couleur("0");
               {
                 printf("\033[H\033[2J");
                 couleur("1;5;31");
-                printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+                printf("Erreur de saisi \n");
                 couleur("0");
                 printf("Saissisez maintenant un entier svp\n\n");
                 goto entier;
@@ -327,7 +327,7 @@ couleur("0");
                {
                   printf("\033[H\033[2J");
                   couleur("1;31");
-                  printf("Choix invalide ⚠️ ⚠️ ⚠️\n");
+                  printf("Choix invalide \n");
                   couleur("0");
                   printf("Veillez choisir à nouveau");
                   goto demande3;
@@ -337,7 +337,7 @@ couleur("0");
              {
                 printf("\033[H\033[2J");
                 couleur("1;5;31");
-                printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+                printf("Erreur de saisi \n");
                 couleur("0");
                 printf("Saissisez maintenant un entier svp\n\n");
                 goto debut;
@@ -353,7 +353,7 @@ couleur("0");
           {
              printf("\033[H\033[2J");
              couleur("1;31");
-             printf("Choix invalide ⚠️ ⚠️ ⚠️\n");
+             printf("Choix invalide \n");
              couleur("0");
              printf("Veillez choisir à nouveau\n");
              goto encore3; //On reprend le cas 3 (crible d'Eratosthène)
@@ -363,7 +363,7 @@ couleur("0");
         {
           printf("\033[H\033[2J");
           couleur("1;5;31");
-          printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+          printf("Erreur de saisi \n");
           couleur("0");
           printf("Saissisez maintenant un entier svp\n\n");
           goto encore3;
@@ -376,7 +376,7 @@ couleur("0");
       printf("\n");
       couleur("1;40;33"); printf("###########################################################################################\n");
       printf("#######                                                                               #####\n");
-      printf("#######   Merci d'avoir utiliser notre programme😊️😊️ aurevoir et a très bientôt👋️👋️   #####\n");
+      printf("#######   Merci d'avoir utiliser notre programme  aurevoir et a très bientôt   #####\n");
       printf("#######                                                                               #####\n");
       printf("###########################################################################################\n\n");
      };break;
@@ -384,7 +384,7 @@ couleur("0");
      {
         printf("\033[H\033[2J");
         couleur("1;31");
-        printf("Choix invalide ⚠️ ⚠️ ⚠️");
+        printf("Choix invalide ");
         couleur("0");
         goto debut;
      }
@@ -394,12 +394,12 @@ couleur("0");
    {
      printf("\033[H\033[2J");
      couleur("1;5;31");
-     printf("Erreur de saisi ⛔️ ⛔️ ⛔️\n");
+     printf("Erreur de saisi \n");
      couleur("0");
      printf("Saissisez maintenant un entier svp\n");
      goto debut;
    }
-   printf("------------------------------------- 🇧🇫️ 🇧🇫️ 🇧🇫️ 🇧🇫️ 🇧🇫️ 🇧🇫️ 🇧🇫️  -------------------------------");
+   printf("------------------------------------- --------------------------------------------------------------------");
    couleur("0");
    printf("\n\n\n");
 }
